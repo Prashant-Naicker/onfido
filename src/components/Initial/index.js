@@ -4,13 +4,18 @@ import styles from './initial.module.css';
 import Logo from '../../images/vensa-logo.png';
 
 
-const Initial = () => {
+const Initial = ({onClick}) => {
 
     return (
         <div className={styles.flexbox}>
             <img className={styles.logo} src={Logo} alt="logo" />
             <div className={styles.introText}>Welcome to the Vensa-Onfido Experience</div>
-            <div className={styles.button}>Start</div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div className={styles.button} onClick={() => onClick(1)}>Start</div>
         </div>
     );
 }
